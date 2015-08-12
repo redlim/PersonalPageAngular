@@ -50,15 +50,15 @@ body {
   font-size: 21px;
   padding: 14px 24px;
 }
-.presentation{
+#presentation{
   background-image: url("../images/wilderBackground.jpg");
   background-position: center center ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
-  padding: 30% 10px 10px 10px;
+  /*padding: 30% 10px 10px 10px;*/
 }
-.presentation h1{
+#presentation h1{
   font-size: 35px;
   margin-top :10px;
 }
@@ -76,17 +76,17 @@ body {
   .container {
     max-width: 730px;
   }
-  .presentation{
+  #presentation{
     background-image: url("../images/wilderBackground.jpg");
     background-position: center center ;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
-    height: 600px;
+    height: 300px;
   }
-  .presentation h1{
+  #presentation h1{
     font-size: 45px;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 
   /* Remove the padding we set earlier */
