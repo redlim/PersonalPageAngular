@@ -1,17 +1,13 @@
-'use strict';
+angular.module('wilderOlmosApp').directive('about', function() {
 
-/**
- * @ngdoc function
- * @name wilderOlmosApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the wilderOlmosApp
- */
-angular.module('wilderOlmosApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  var aboutController = function(){
+
+  };
+
+  return {
+    restrict: 'A',
+    templateUrl: 'views/about.html',
+    controller : aboutController,
+    controllerAs: 'aboutCtrl'
+  }
+});

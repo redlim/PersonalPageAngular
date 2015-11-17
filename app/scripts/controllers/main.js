@@ -24,3 +24,4 @@ angular.module('wilderOlmosApp')
       return this.tab === selected
     }
   });
+
