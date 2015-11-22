@@ -1,6 +1,8 @@
+"use strict";
+
 angular.module('wilderOlmosApp').directive('navBar', function() {
 
-  var navBarController = function($scope,$document){
+  var navBarController = function(){
 
   };
 
@@ -9,5 +11,5 @@ angular.module('wilderOlmosApp').directive('navBar', function() {
     templateUrl: 'views/navbar.html',
     controller : navBarController,
     controllerAs: 'navBarCtrl'
-  }
+  };
 });

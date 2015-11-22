@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module('wilderOlmosApp').directive('header', function() {
 
   var headerController = function(){
@@ -9,5 +11,5 @@ angular.module('wilderOlmosApp').directive('header', function() {
     templateUrl: 'views/header.html',
     controller : headerController,
     controllerAs: 'headerCtrl'
-  }
+  };
 });

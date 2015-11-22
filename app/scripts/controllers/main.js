@@ -18,10 +18,10 @@ angular.module('wilderOlmosApp')
 .controller('NavbarCtrl',function(){
     this.tab = 1;
     this.selectedTab = function(selectedTab){
-      this.tab = selectedTab
+      this.tab = selectedTab;
     };
     this.isSelected = function(selected){
-      return this.tab === selected
-    }
+      return this.tab === selected;
+    };
   });
 

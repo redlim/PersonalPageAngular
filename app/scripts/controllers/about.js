@@ -1,3 +1,4 @@
+"use strict";
 angular.module('wilderOlmosApp').directive('about', function() {
 
   var aboutController = function(){
@@ -9,5 +10,5 @@ angular.module('wilderOlmosApp').directive('about', function() {
     templateUrl: 'views/about.html',
     controller : aboutController,
     controllerAs: 'aboutCtrl'
-  }
+  };
 });
