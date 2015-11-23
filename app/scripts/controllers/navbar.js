@@ -2,7 +2,8 @@
 
 angular.module('wilderOlmosApp').directive('navBar', function() {
 
-  var navBarController = function(){
+  var navBarController = function() {
+
 
   };
 

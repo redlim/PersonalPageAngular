@@ -548,7 +548,7 @@ section h3.section-subheading {
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
-    margin-left: -85px
+    margin-left: -85px;
   }
 
   .timeline > li .timeline-image h4 {
@@ -585,10 +585,7 @@ aside.clients img {
 }
 
 section#contact {
-  background-color: #222;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat
+  background: #222 no-repeat center;
 }
 
 section#contact .section-heading {
@@ -873,4 +870,15 @@ body {
   line-height: 160px;
   font-size: 2em;
   text-shadow: 0 0 0.5em black;
+}
+
+.fromLeft  {
+  visibility: hidden;
+}
+.fromRight {
+  visibility: hidden;
+}
+
+#graphic{
+  visibility: hidden;
 }
