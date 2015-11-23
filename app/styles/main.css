@@ -257,7 +257,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-  padding: 100px 0
+  padding: 10px 0
 }
 
 section h2.section-heading {
@@ -277,7 +277,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0
+    padding: 10px 0
   }
 }
 
@@ -874,8 +874,3 @@ body {
   font-size: 2em;
   text-shadow: 0 0 0.5em black;
 }
-
-
-body { background: url(http://www.jmchristensendesign.com/wp-content/themes/jmcdsn/images/intro_default-background.jpg); color: #fff; height: 100%; padding-top: 2em; text-align: center;}
-h1, h2{ margin: 0; text-transform: uppercase;text-shadow: 0 0 0.5em black;}
-h2 { font-weight: 300}
