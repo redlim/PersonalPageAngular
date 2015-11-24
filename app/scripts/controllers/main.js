@@ -35,20 +35,25 @@ angular.module('wilderOlmosApp')
           $(this).addClass("hatch");
         }
       });
+      if ($(".navbar").offset().top > 150) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+
+      var scrollPos = $(document).scrollTop();
+      $('#mainNavBar a').each(function () {
+        console.log(scrollPos);
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#mainNavBar ul li a').removeClass("active");
+          currLink.parent().addClass("active");
+        }
+        else{
+          currLink.parent().removeClass("active");
+        }
+      });
     });
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  })
-.controller('NavbarCtrl',function(){
-    this.tab = 1;
-    this.selectedTab = function(selectedTab){
-      this.tab = selectedTab;
-    };
-    this.isSelected = function(selected){
-      return this.tab === selected;
-    };
   });
 

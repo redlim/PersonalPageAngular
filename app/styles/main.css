@@ -111,18 +111,23 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff
 }
 
-.navbar-default {
-  background-color: #222;
-  border-color: transparent
+.navbar-brand{
+  padding: 0;
 }
-
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default a{
+  color: black;
+}
 .navbar-default .navbar-brand {
-  color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
+  color: #000000;
+  font-family:  Helvetica, Arial, cursive
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-  color: #fec503
+  color: #ffff00
 }
 
 .navbar-default .navbar-collapse {
@@ -135,19 +140,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff
+  background-color: #ff8219
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #fed136
+  background-color: #ff8219
 }
 
 .navbar-default .nav li a {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #fff
+  color: #000000
 }
 
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
@@ -167,13 +172,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    padding: 25px 0;
-    -webkit-transition: padding .3s;
-    -moz-transition: padding .3s;
-    transition: padding .3s;
-    border: 0
+
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    background-color: #222;
+    border-color: transparent;
+    padding: 0;
   }
 
   .navbar-default .navbar-brand {

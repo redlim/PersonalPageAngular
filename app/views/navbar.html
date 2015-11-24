@@ -15,22 +15,22 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="mainNavBar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="hidden">
-          <a href="#page-top" du-smooth-scroll du-scrollspy duration="1000"></a>
+        <li  class="hidden" ng-class="{active : navbarCtrl.isActive(1)}">
+          <a href="#page-top" ng-click="navbarCtrl.setActive(1)"  du-smooth-scroll du-scrollspy duration="1000"></a>
         </li>
-        <li>
-          <a  href="#about"  du-smooth-scroll du-scrollspy duration="1000">Quién soy</a>
+        <li ng-class="{'active' : navbarCtrl.isActive(2)}">
+          <a class="page-scroll" ng-click="navbarCtrl.setActive(2)"  href="#about"  du-smooth-scroll du-scrollspy duration="1000">Quién soy</a>
         </li>
-        <li>
-          <a href="#knowledge"  du-smooth-scroll du-scrollspy duration="1000">Conocimientos</a>
+        <li ng-class="{'active' : navbarCtrl.isActive(3)}">
+          <a href="#knowledge" ng-click="navbarCtrl.setActive(3)"   du-smooth-scroll du-scrollspy duration="1000">Conocimientos</a>
         </li>
-        <li>
-          <a  href="#about"  du-smooth-scroll du-scrollspy duration="1000">Descubre</a>
+        <li ng-class="{active : navbarCtrl.isActive(4)}">
+          <a  href="#about" ng-click="navbarCtrl.setActive(4)"  du-smooth-scroll du-scrollspy duration="1000">Trabajos Personales</a>
         </li>
-        <li>
-          <a  href="#contact"  du-smooth-scroll du-scrollspy duration="1000">Contact</a>
+        <li ng-class="{active : navbarCtrl.isActive(5)}">
+          <a  href="#contact" ng-click="navbarCtrl.setActive(4)" du-smooth-scroll du-scrollspy duration="1000">Contacto</a>
         </li>
       </ul>
     </div>
