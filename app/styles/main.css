@@ -120,10 +120,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-default a{
   color: black;
+  font-weight: bold;
 }
 .navbar-default .navbar-brand {
   color: #000000;
-  font-family:  Helvetica, Arial, cursive
+  font-family:  Helvetica, Arial, cursive;
+font-weight: bold;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
@@ -150,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .nav li a {
   font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 1px;
   color: #000000
 }

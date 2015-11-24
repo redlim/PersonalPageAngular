@@ -43,7 +43,6 @@ angular.module('wilderOlmosApp')
 
       var scrollPos = $(document).scrollTop();
       $('#mainNavBar a').each(function () {
-        console.log(scrollPos);
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
