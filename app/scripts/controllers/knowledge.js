@@ -5,16 +5,16 @@ app.directive('knowledge', function() {
 
   var knowledgeController = function($scope) {
 
-
+    this.active ="Javascript";
     var localValues = this;
     this.data = [{
       name: 'Javascript',
-      details: 'NodeJs, AngularJs',
+      details: 'NodeJs, AngularJs, d3Js',
       value: 70
     },
       {
         name: 'HTML + css3',
-        details: '',
+        details: 'Bootstrap',
         value: 90
       },
       {
@@ -36,7 +36,7 @@ app.directive('knowledge', function() {
       {
         name: 'Bases de datos',
         value: 75,
-        details: 'Mysql mi gran aliado, aunque estoy empezando a investigar Nosql'
+        details: 'Mysql es mi gran aliado, aunque estoy empezando a investigar Nosql'
       }];
 
     $scope.initialValue = this.data[0];
@@ -56,11 +56,11 @@ app.directive('knowledge', function() {
 
       var object = [];
       var valueComp = 100 - data.value;
+      object.push(data);
       object.push({
         name: 'complementario',
         value: valueComp
       });
-      object.push(data);
       return object;
     };
 
@@ -88,7 +88,7 @@ app.directive('knowledge', function() {
       .duration(500)
       .attr("fill", function (d) {
         if (d.data.name === 'complementario')
-          return 'black'; else return 'orange';
+          return '#27313b'; else return '#3d6678';
       })
       .attr("d",arc)
       .each(function(d) { this._current = d; });
@@ -96,6 +96,7 @@ app.directive('knowledge', function() {
     // actualización
 
     this.click = function (data) {
+      this.active =data.name;
       path.data(pie(scale(data)));
       path.transition().duration(750).attrTween("d", arcTween);
       svg.select("text")

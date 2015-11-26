@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-12 text-center" >
       <div class="btn-group btn-group-lg" role="group" >
-        <button  type="button" class="btn btn-info" ng-repeat="data in knowledgeCtrl.data" ng-click="knowledgeCtrl.click(data)">
+        <button  type="button" class="btn btn-graphic" ng-class="{active : knowledgeCtrl.active === data.name}" ng-repeat="(key,data) in knowledgeCtrl.data" ng-click="knowledgeCtrl.click(data)">
           {{data.name}}
         </button>
       </div>
