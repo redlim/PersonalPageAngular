@@ -1,5 +1,5 @@
 # wilder-olmos
-Personal Web Page
+Antigua web hecha en Angular 1.*
 
 ## Build & development
 
